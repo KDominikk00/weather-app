@@ -14,15 +14,18 @@
     <title>Weather App</title>
   </head>
   <body>
-    <nav>
-      <span><i class="fa-solid fa-location-dot"></i></span>
-      <input type="search" placeholder="Enter your location" />
-      <button class="search-btn" type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </nav>
+    <header>
+      <h1>Weather Forecast</h1>
+      <!-- <nav>
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <input type="search" placeholder="Enter your location" />
+        <button class="search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </nav> -->
+    </header>
     <main>
-      <div class="container">
+      <div class="container container1">
         <h1>Warsaw, PL</h1>
         <img src="Images/Cloudysunny.png" alt="Weather logo" />
         <h2>23°C</h2>
@@ -45,18 +48,18 @@
           </p>
         </div>
       </div>
-      <div class="container">
-        <h1>Warsaw, PL</h1>
-        <img src="Images/Cloudysunny.png" alt="Weather logo" />
-        <h2>23°C</h2>
+      <div class="container container2">
+        <h1>London, UK</h1>
+        <img src="Images/cloudyrainy.png" alt="Weather logo" />
+        <h2>11°C</h2>
         <div class="weather-info">
           <p>
             Humidity: <br />
-            50%
+            23%
           </p>
           <p>
             Air Quality: <br />
-            mid
+            bad
           </p>
           <p>
             something: <br />
@@ -68,21 +71,18 @@
           </p>
         </div>
       </div>
-      <div class="container">
-        <h1>Warsaw, PL</h1>
-        <img
-          src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
-          alt="Weather logo"
-        />
-        <h2>23°C</h2>
+      <div class="container container3">
+        <h1>Sydney, AU</h1>
+        <img src="Images/sunny.png" alt="Weather logo" />
+        <h2>26°C</h2>
         <div class="weather-info">
           <p>
             Humidity: <br />
-            50%
+            66%
           </p>
           <p>
             Air Quality: <br />
-            mid
+            Great
           </p>
           <p>
             something: <br />
@@ -93,6 +93,10 @@
             dolor
           </p>
         </div>
+      </div>
+      <div class="container container4">
+        <h3>ADD LOCATION</h3>
+        <button>+</button>
       </div>
     </main>
   </body>
