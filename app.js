@@ -1,22 +1,48 @@
 import { API_KEY } from "./config.js";
 
-let cityName = document.querySelector("#cityName");
-let cityNameString = cityName.textContent;
-console.log(cityNameString);
+const searchBtn = document.querySelector("#search-btn");
+let citySearchInput = document.querySelector("#citySearch");
 
-const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${cityNameString}`;
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": API_KEY,
-    "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
-  },
-};
+searchBtn.addEventListener("click", async (e) => {
+  let citySearch = document.querySelector("#citySearch").value;
 
-try {
-  const response = await fetch(url, options);
-  const result = await response.text();
-  console.log(result);
-} catch (error) {
-  console.error(error);
-}
+  const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${citySearch}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": API_KEY,
+      "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+citySearchInput.addEventListener("keypress", async (key) => {
+  if (key.key === "Enter") {
+    let citySearch = document.querySelector("#citySearch").value;
+
+    const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${citySearch}`;
+    const options = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Key": API_KEY,
+        "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+      },
+    };
+
+    try {
+      const response = await fetch(url, options);
+      const result = await response.text();
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+});
