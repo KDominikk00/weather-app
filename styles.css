@@ -91,7 +91,8 @@ main {
   -webkit-box-shadow: 0px 0px 46px 4px rgba(61, 109, 144, 1);
   -moz-box-shadow: 0px 0px 46px 4px rgba(61, 109, 144, 1);
   box-shadow: 0px 0px 46px 4px rgba(61, 109, 144, 1);
-  background-image: url("https://images.unsplash.com/photo-1525490829609-d166ddb58678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1525490829609-d166ddb58678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80"); */
+  background: #0f1522b0;
 }
 
 .container img {
