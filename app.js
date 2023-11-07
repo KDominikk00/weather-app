@@ -192,6 +192,12 @@ citySearchInput.addEventListener("keypress", async (key) => {
       }else if(dataobject.current.condition.text = "Light drizzle" && dataobject.current.condition.icon.includes("night")) {
         let img = (document.querySelector("#mainimg").src =
         "Images/rainynight.png");
+      }else if(dataobject.current.condition.text = "Light snow") {
+        let img = (document.querySelector("#mainimg").src =
+        "Images/snowy.png");
+      }else if(dataobject.current.condition.text = "Light snow" && dataobject.current.condition.icon.includes("night")) {
+        let img = (document.querySelector("#mainimg").src =
+        "Images/snowynight.png");
       }
       })
       .catch((error) => {
